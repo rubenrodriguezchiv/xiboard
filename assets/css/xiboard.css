@@ -1,0 +1,611 @@
+/*
+---------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography
+2. General
+3. Nav
+4. Hero Carousel
+5. Accordion
+6. Shop
+7. Product
+8. Brand
+9. Carousel Hero
+10. Carousel Brand
+11. Services
+12. Contact map
+13. Footer
+14. Small devices (landscape phones, 576px and up)
+15. Medium devices (tablets, 768px and up)
+16. Large devices (desktops, 992px and up)
+17. Extra large devices (large desktops, 1200px and up)
+18. Boton Whatsapp
+19. Root
+20. Body
+21. Sidebar
+22. Header
+23. Menu Button
+24. Brand
+25. Menu Container
+26. Search
+27. Menu
+28. Submenu
+29. Footer
+30. User
+31. Sidebar button
+32. Main
+33. Dark mode
+34. Responsive
+--------------------------------------------- */
+
+/* Typography */
+body, ul, li, p, a, label, input, div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300 !important;
+}
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px !important;
+}
+/* General */
+.logo { font-weight: 500 !important;}
+.text-warning {  color: #ede861 !important;}
+.text-muted { color: #bcbcbc !important;}
+.text-success { color: #415aa7 !important;}
+.text-light { color: #cfd6e1 !important;}
+.bg-dark { background-color: #212934 !important;}
+.bg-light { background-color: #e9eef5 !important;}
+.bg-black { background-color: #1d242d !important;}
+.bg-success { background-color: #152081 !important;}
+.btn-success {
+  background-color: #415aa7 !important;
+  border-color: #415aa7 !important;
+}
+.pagination .page-link:hover {color: #000;}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background-color: #415aa7;
+  color: #fff;
+}
+/* Nav */
+#xiboard_nav_top { min-height: 40px;}
+#xiboard_nav_top * { font-size: .9em !important;}
+#xiboard_main_nav a { color: #212934;}
+#xiboard_main_nav a:hover { color: #415aa7;}
+#xiboard_main_nav .navbar .nav-icon { margin-right: 20px;}
+.submenu {list-style: none;}
+.submenu nav a{display: block;}
+li ul {display: none;}
+li:hover > ul {display: block;}
+.sidebar {
+  background-color: white;
+  align-items: center;
+  border-radius: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  width: 15rem;
+  height: 100%; 
+  position: fixed;
+  padding: 1.4rem 1rem;
+  top: 0px; /* Distancia desde abajo */
+  left: 0px;  /* Distancia desde la derecha */
+  z-index: 2; /* Asegura que esté por encima de todo */
+  transition: width 0.5s ease;
+}
+
+/* Hero Carousel */
+#xi-board-zay-hero-carousel { background: #efefef !important; z-index: 1;}
+/* Accordion */
+.xiboard-accordion a { color: #000;}
+.xiboard-accordion a:hover { color: #333d4a;}
+/* Shop */
+.shop-top-menu a:hover { color: #415aa7 !important;}
+/* Product */
+.product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);}
+.product-wap .product-color-dot.color-dot-red { background:#f71515;}
+.product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
+.product-wap .product-color-dot.color-dot-black { background:#000000;}
+.product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
+.product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
+.card.product-wap .card .product-overlay {
+  background: rgba(0,0,0,.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.card.product-wap a { color: #000;}
+#carousel-related-product .slick-slide:focus { outline: none !important;}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* Brand */
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: .5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+/* Carousel Hero */
+#xi-board-zay-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: #415aa7;
+}
+#xi-board-zay-hero-carousel .carousel-control-next i,
+#xi-board-zay-hero-carousel .carousel-control-prev i {
+  color: #415aa7 !important;
+  font-size: 2.8em !important;
+}
+/* Carousel Brand */
+.xiboard-carousel .h1 {
+  font-size: .5em !important;
+  color: #000 !important;
+}
+/* Services */
+.services-icon-wap {transition: .3s;}
+.services-icon-wap:hover, .services-icon-wap:hover i {color: #fff;}
+.services-icon-wap:hover {background: #415aa7;}
+/* Contact map */
+.leaflet-control a, .leaflet-control { font-size: 10px !important;}
+.form-control { border: 1px solid #e8e8e8;}
+/* Footer */
+#xiboard_footer a { color: #dcdde1;}
+#xiboard_footer a:hover { color: #415aa7;}
+#xiboard_footer ul.footer-link-list li { padding-top: 10px;}
+#xiboard_footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+#xiboard_footer ul.footer-icons li:hover {
+  background-color: #cfd6e1;
+  transition: .5s;
+}
+#xiboard_footer ul.footer-icons li:hover i {
+  color: #212934;
+  transition: .5s;
+}
+#xiboard_footer .border-light { border-color: #2d343f !important;}
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+
+@media (min-width: 576px) {
+  .xiboard-carousel .h1 { font-size: 1em !important;}
+  .menu-btn{
+    top: 5%;
+  }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #xiboard_main_nav .navbar-nav {max-width: 450px;}
+  .menu-btn{
+    top: 5%;
+  }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #xiboard_main_nav .navbar-nav {max-width: 550px;}
+  #xi-board-zay-hero-carousel .carousel-item {min-height: 30rem !important;}
+  .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {font-size: 18px !important;}
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+  .menu-btn{
+    top: 5%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* Boton Whatsapp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px; /* Distancia desde abajo */
+    right: 5px;  /* Distancia desde la derecha */
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+/* Root */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --color-bg: #EBECF2;
+    --color-surface: #FFFFFF;
+    --color-border: #9A9EB2;
+    --color-text-primary: #000;
+    --color-text-secondary: #3F435D;
+    --color-tooltip-bg: #2A2E33;
+    --color-tooltip-text: #fff;
+    --shadow-border: rgba(0, 0, 0, 0.1);
+    --user-bg-color: #FAFAFC;
+}
+body.dark-mode{
+    --color-bg: #3A3D4D;
+    --color-surface: #12141A;
+    --color-border: #282D3B;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #9CA2B8;
+    --color-tooltip-bg: #FFF;
+    --color-tooltip-text: #000;
+    --shadow-border: rgba(255, 255, 255, 0.1);
+    --user-bg-color: #FAFAFC;
+}
+/* Body */
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    transition: color 0.5s ease;
+    border-color: 0.3s ease,left 0.5s;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 20rem;
+    height: 100%;
+    padding: 1.4rem 1rem 0 1rem;
+    background-color: var(--color-surface);
+    box-shadow: 1px 0px 10px var(--shadow-border);
+    transition: width 0.5s ease;
+}
+.sidebar.minimize{
+    width: 4.94rem;
+}
+/* Header */
+.header{
+    width: 100%;
+}
+/* Menu Button */
+.menu-btn{
+    position: absolute;
+    z-index: 2; /* Asegura que esté por encima de todo */
+    top: 10%;
+    right: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #757575;
+    box-shadow: 2px 2px 5px var(--shadow-border);
+    cursor: pointer;
+    transition: right 0.3s ease;
+    position: fixed;
+}
+.menu-btn i {
+    font-size: 1.5rem;
+}
+.sidebar.minimize .menu-btn{
+    right: 0rem;
+}
+.sidebar.minimize .menu-btn i{
+    transform: rotate(180deg);
+}
+/* Brand */
+.brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding-left: 0.455rem;
+    margin-bottom: 1.8rem;
+    overflow: hidden;
+}
+
+.brand img {
+    width: 2rem;
+}
+.brand span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+/* Menu Container */
+.menu-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+/* Search */
+.search {
+    display: flex;
+    width: 100%;
+    padding: 0.55rem 0;
+    margin-bottom: 1.2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0 1px var(--color-border);
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+}
+.search:hover{
+    box-shadow: 0 0 0 1px var(--color-text-primary);
+}
+.sidebar.minimize .search{
+    box-shadow: none;
+}
+.sidebar.minimize .search:hover{
+    background-color: var(--color-bg);
+}
+.search i{
+    font-size: 1.35rem;
+    color: var(--color-text-secondary);
+    padding: 0 0.8rem;
+}
+.search:hover i{
+    color: var(--color-text-primary);
+}
+.search input{
+    width: 70%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-text-primary);
+}
+/* Menu */
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.menu .menu-item{
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+.menu .menu-link{
+    display: flex;
+    padding: 0.55rem 0;
+    columns: var(--color-text-secondary);
+    text-decoration: none;
+    border-radius: 0.3rem;
+    color: var(--color-text-primary);
+}
+.menu-item:hover .menu-link, .submenu .sub-menu-link:hover, .menu-item.active .menu-link{
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+}
+.menu-link i{
+    font-size: 1.35rem;
+    padding: 0 0.8rem;
+}
+.menu-link i:last-child{
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+.sidebar.minimize .menu-link i:last-child{
+    display: none;
+}
+
+.menu-item.sub-menu-toggle .menu-link i:last-child{
+    transform: rotate(180deg);
+   
+}
+.menu-link span{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.sidebar.minimize .menu-item:hover, .sidebar.minimize .menu-item.sub-menu-toggle{
+    overflow: visible;
+}
+.sidebar.minimize .menu-item:hover span, .sidebar.minimize .menu-item.sub-menu-toggle span{
+    position: absolute;
+    left: 4.2rem;
+    padding: 0.5rem;
+    background-color: var(--color-tooltip-bg);
+    border-radius: 0.4rem;
+    color: var(--color-tooltip-text);
+    transition: all 0.3s ease;
+}
+/* Submenu */
+.submenu{
+    height: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    left: 0;
+}
+.sidebar.minimize .submenu{
+    position: absolute;
+    left: 4.2rem;
+    top: 3rem;
+    background-color: var(--color-surface);
+    border-radius: 0.2rem;
+}
+.submenu .sub-menu-link{
+    display: flex;
+    margin-left: 2.5rem;
+    padding: 0.55rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-decoration: none; 
+    border-radius: 0.3rem;
+}
+.submenu::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.07rem;
+    margin-left: 1.4rem;
+    background-color: var(--color-border);
+}
+.sidebar.minimize .submenu::before{
+    width: 0;
+}
+.sidebar.minimize .submenu a{
+    margin: 0 0.5rem;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 -0.02rem 0 0 var(--color-border);
+}
+/* User */
+.user{
+    display: flex;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.user-img{
+    display: flex;
+    margin: 0 0.7rem 0 0.35rem;
+}
+.user-img img{
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-data{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.user-data .name{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+.user-data .email{
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+}
+.user-icon{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+}
+/* Sidebar button */
+.sidebar-btn{
+    display: none;
+}
+/* Main */
+main{
+    transition: padding 0.5s ease;
+}
+main h1{
+    color: var(--color-text-primary);
+}
+.sidebar.minimize + main{
+    padding-left: 4rem;
+}
+
+/* Responsive */
+@media (max-height: 720px){
+    .footer{
+        box-shadow: none;
+    }
+    .footer ul{
+        display: flex;
+    }
+    .menu-container{
+    overflow-y: auto;
+    }
+    .search{
+        box-shadow: none;
+        border: 2px solid var(--color-border);
+    }
+    .search:hover{
+        box-shadow: none;
+    }
+    main{
+        padding: 0rem;
+    }
+}
+@media (min-width:0px) /*or (min-height:0px)*/{
+    .menu-btn{
+    top: 18%;
+  }
+    #menu-btn{
+        display: none;
+    }
+    .sidebar{
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    .sidebar-btn{
+        display: flex;
+        right: 1rem;
+        padding: 0rem;
+    }
+    .sidebar-btn i:last-child{
+        display: none;
+    }
+    body.sidebar-hidden .sidebar{
+        transform: translateX(0);
+    }
+    body.sidebar-hidden .sidebar-btn i:last-child{
+        display: flex;
+    }
+    body.sidebar-hidden .sidebar-btn i:first-child{
+        display: none;
+    }
+}
+@media (max-width:300px) /*or (min-height:0px)*/{
+#xi-board-zay-hero-carousel { width:fit-content;}
+.navbar {width:fit-content;}
+}
+@media (min-width:321px) /*or (min-height:0px)*/{
+    .menu-btn{
+    top: 4%;
+    }
+  }
+@media (min-width:992px) /*or (min-height:0px)*/{
+    .menu-btn{
+    top: 7.5%;
+    }
+  }
+@media (min-width:1025px) /*or (min-height:0px)*/{
+    .menu-btn{
+    top: 10%;
+    }
+    #xi-board-zay-hero-carousel { width:100%;}
+  }
