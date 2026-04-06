@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>XI-Board - Detalles del producto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/Icono.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Icono.png">
+
+    <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/xiboard.css">
+
+   <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="assets/css/Roboto.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/MaterialSymbols.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
+</head>
+
+<body>
+
+    <!-- Start Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <header>
+            <nav class="navbar2">
+                <ul class="links">
+                </ul>
+                <button class="login-btn bx bx-user">Ingresar</button>
+            </nav>
+        </header>
+        <div class="header">
+            <div class="menu-btn" id="menu-btn">
+                <i class="bx bx-chevron-left"></i>
+            </div>
+            <div class="brand">
+                <img src="assets/img/Icono.png" alt="logo">
+                <span>Menu</span>
+            </div>
+        </div>
+               <div class="menu-container">
+            <div class="search">
+                <i class="bx bx-search"></i>
+                <input type="search" placeholder="Buscar" id="search">
+            </div>
+            <ul class="menu">
+                <li class="menu-item menu-item-static">
+                    <a href="index.html" class="menu-link">
+                        <i class="bx bx-home-alt-2"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-static active">
+                    <a href="shop.html" class="menu-link">
+                        <i class="bx bx-store"></i>
+                        <span>Tienda</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-dropdown">
+                    <a href="#" class="menu-link">
+                        <i class="bx bx-shopping-bag"></i>
+                        <span>Productos</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#" class="sub-menu-link">Crear</a></li>
+                        <li><a href="#" class="sub-menu-link">Modificar</a></li>
+                        <li><a href="#" class="sub-menu-link">Eliminar</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-dropdown">
+                    <a href="#" class="menu-link">
+                        <i class="bx bx-registered"></i>
+                        <span>Marcas</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#" class="sub-menu-link">Crear</a></li>
+                        <li><a href="#" class="sub-menu-link">Modificar</a></li>
+                        <li><a href="#" class="sub-menu-link">Eliminar</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-dropdown">
+                    <a href="#" class="menu-link">
+                        <i class="bx bx-user"></i>
+                        <span>Usuario</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#" class="sub-menu-link">Actualizar datos</a></li>
+                        <li><a href="#" class="sub-menu-link">Cerrar sesion</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-static">
+                    <a href="#" class="menu-link">
+                        <i class="bx bx-task"></i>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-static">
+                    <a href="about.html" class="menu-link">
+                        <i class="bx bx-info-circle"></i>
+                        <span>Nosotros</span>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-static">
+                    <a href="contact.html" class="menu-link">
+                        <i class="bx bx-at"></i>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul class="menu">
+                <li class="menu-item menu-item-static">
+                    <a href="#" class="menu-link">
+                        <i class="bx bx-bell"></i>
+                        <span>Notificaciones</span>
+                    </a>
+                </li>  
+            </ul>
+            <div class="user">
+                <div class="user-img">
+                    <img src="assets/img/Usuarios/V-20280099.jpeg" alt="user">
+                </div>
+                <div class="user-data">
+                    <span class="id">V-20280099</span>
+                    <span class="name">Ruben Rodriguez</span>
+                    <span class="email">rubenrodriguez.chiv@gmail.com</span>
+                </div>
+                <div class="user-icon">
+                    <i class="bx bx-arrow-out-left-square-half"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <main>
+
+        <!-- Start Top Nav -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="xiboard_nav_top">
+            <div class="container text-light">
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <i class="fa fa-envelope mx-2"></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:ventas@xiboard.com.ve">ventas@xiboard.com.ve</a>
+                        <i class="fa fa-phone mx-2"></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+584140640285">+584140640285</a>
+                    </div>
+                <div>
+                        <a class="text-light" href="https://facebook.com/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                        <a class="text-light" href="https://www.instagram.com/xiboardcomputerservices/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                        <a class="text-light" href="https://twitter.com/XIBOARDCA" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                        <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Close Top Nav -->
+
+        <!-- Botón Flotante WhatsApp -->
+        <a href="https://wa.me/584140640285?text=Hola,%20necesito%20más%20información" class="btn-whatsapp" target="_blank">
+        <!-- Puedes usar una imagen o un icono SVG aquí -->
+        <img src="assets/img/Logo Whatsapp.png" alt="WhatsApp" width="80" height="80">
+        </a>
+        <!-- Botón Flotante Menu -->
+        <div class="menu-btn sidebar-btn" id="sidebar-btn"> 
+            <i class="bx bx-dots-vertical-rounded"></i>
+            <i class="bx bx-x"></i>   
+        </div>
+
+        <!-- Menu sesion -->
+        <div class="blur-bg-overlay"></div>
+        <div class="form-popup">
+            <span class="close-btn material-symbols-rounded">close</span>
+            <div class="form-box login">
+                <div class="form-details">
+                    <h2>Bienvenido</h2>
+                    <p>Por favor, inicie sesión usando su información personal para mantenerse en sintonía con nosotros.</p>
+                </div>
+                <div class="form-content">
+                    <h2>Iniciar</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="radio" name="type" id="small" checked/>
+                            <label for="small"><span class="radio-button-1"></span>Venezolano</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="type" id="large" />
+                            <label for="large"><span class="radio-button-1"></span>Jurídico</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" required>
+                            <label>Identificación</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required>
+                            <label>Clave</label>
+                        </div>
+                        <a href="#" class="forgot-pass-link">Olvidé la clave</a>
+                        <button type="submit">Iniciar</button>
+                    </form>
+                    <div class="bottom-link">
+                        No tengo cuenta:
+                        <a href="#" id="signup-link">Registrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box signup">
+                <div class="form-details">
+                    <h2>Crear cuenta</h2>
+                    <p>Para formar parte de la comunidad, por favor registrese usando su información personal.</p>
+                </div>
+                <div class="form-content">
+                    <h2>Registrar</h2>
+                    <form action="#">
+                    <div class="form-group">
+                        <input type="radio" name="type" id="small" checked/>
+                        <label for="small"><span class="radio-button-1"></span>Venezolano</label>
+			        </div>
+			        <div class="form-group">
+                        <input type="radio" name="type" id="large" />
+                        <label for="large"><span class="radio-button-1"></span>Jurídico</label>
+			        </div>
+                        <div class="input-field">
+                            <input type="number" required>
+                            <label>Ingrese identificación</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Nombre y Apellido</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" required>
+                            <label>Ingrese correo</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required>
+                            <label>Crear clave</label>
+                        </div>
+                        <div class="policy-text">
+                            <input type="checkbox" id="policy">
+                            <label for="policy">Estoy de acuerdo con los <a href="#" class="option">Términos y Condiciones</a>
+                            </label>
+                        </div>
+                        <button type="submit">Registrar</button>
+                    </form>
+                    <div class="bottom-link">
+                        Ya tengo cuenta: 
+                        <a href="#" id="login-link">Iniciar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin menu sesion -->
+
+        <!-- Header --> 
+        <nav class="navbar navbar-expand-lg navbar-light shadow">  
+            <div class="container d-flex justify-content-between align-items-center">
+                <img src="assets/img/Logo Web Xiboard.png" alt="Xiboard" width="300" height="80"> 
+                <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                |    
+                </a>
+                </button>
+                <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="xiboard_main_nav">
+                    <div class="flex-fill">
+                        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-icon position-relative text-decoration-none" href="#">
+                            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Close Header -->
+         
+        <!-- Modal -->
+        <div class="modal fade bg-white" id="xiboard_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="w-100 pt-1 mb-5 text-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Buscar ...">
+                        <button type="submit" class="input-group-text bg-success text-light">
+                            <i class="fa fa-fw fa-search text-white"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Open Content -->
+        <section class="bg-light">
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-lg-5 mt-5">
+                        <div class="card mb-3">
+                            <img class="card-img img-fluid" src="assets/img/Productos/1.png" alt="Card image cap" id="product-detail">
+                        </div>
+                    </div>
+                    <!-- Col end -->
+                    <div class="col-lg-7 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="h2">Laptop Dell Latitude 5080</h1>
+                                <p class="h3 py-2">$280.00</p>
+                                <p class="py-2">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <span class="list-inline-item text-dark">Rating 3.2 | 36 Comments</span>
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <h6>Marca:</h6>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <p class="text-muted"><strong>Dell</strong></p>
+                                    </li>
+                                </ul>
+
+                                <h6>Descripción:</h6>
+                                <p>La Dell Latitude 5480 es una laptop empresarial de 14 pulgadas, lanzada con procesadores Intel Core de 6.ª y 7.ª generación (i3, i5, i7), reconocida por su durabilidad (MIL-STD 810G), versatilidad y amplia conectividad, ideal para tareas de oficina y uso profesional, frecuentemente encontrada hoy en día en el mercado de equipos reacondicionados.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <h6>Condición:</h6>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <p class="text-muted"><strong>Repotenciado</strong></p>
+                                    </li>
+                                </ul>
+
+                                <form action="" method="GET">
+                                    <input type="hidden" name="product-title" value="Activewear">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            
+                                        </div>
+                                        <div class="col-auto">
+                                            <ul class="list-inline pb-3">
+                                                <li class="list-inline-item text-right">
+                                                    Cantidad
+                                                    <input type="hidden" name="product-quanity" id="product-quanity" value="1">
+                                                </li>
+                                                <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                                <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+                                                <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row pb-3">
+                                        <div class="col d-grid">
+                                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
+                                        </div>
+                                        <div class="col d-grid">
+                                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Carrito</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Close Content -->
+
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="xiboard_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Xiboard</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Venezuela, Zulia, San Francisco, Urb Coromoto, Av 40 C.C. Vistana, Local 10
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:+584140640285">+584140640285</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:ventas@xiboard.com.ve">ventas@xiboard.com.ve</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Categorias</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Computación</a></li>
+                        <li><a class="text-decoration-none" href="#">Acessorios</a></li>
+                        <li><a class="text-decoration-none" href="#">Multimedia</a></li>
+                        <li><a class="text-decoration-none" href="#">Impresoras</a></li>
+                        <li><a class="text-decoration-none" href="#">Redes</a></li>
+                        <li><a class="text-decoration-none" href="#">Camaras de seguridad</a></li>
+                        <li><a class="text-decoration-none" href="#">Tablets</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Información relevante</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Acerca</a></li>
+                        <li><a class="text-decoration-none" href="#">Ubicación</a></li>
+                        <li><a class="text-decoration-none" href="#">Preguntas frecuentes</a></li>
+                        <li><a class="text-decoration-none" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/xiboardcomputerservices/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/XIBOARDCA"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Correo</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Correo">
+                        <div class="input-group-text btn-success text-light">Subscribirse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2025 XI-Board Computer Services 
+                            | Diseñado por <a rel="sponsored" href="https://xiboard.com.ve/" target="_blank">Xiboard</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/xiboard.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/login.js"></script>
+    <!-- End Script -->   
+
+    <!-- Start Slider Script -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- End Slider Script -->
+
+</body>
+
+</html>
